@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+:root{
+    --primary-color: #e07a7a;
+    --secondary-color: rgba(131, 129, 131, 0.801);
+    --hover-color: green;
+    --font-color:#000;
+    --primary-font-color: rgb(11, 109, 76);
+    --btn-bg: #6dbd9e;
+  
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    padding: 10px 5rem;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+}
+.logo ,.title{
+    color: var(--primary-font-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar input{
+    border: none;
+    padding: 10px 20px;
+    background-color: #e4dede63;
+    border-radius: 20px;
+
+}
+/*  */
+.flex{
+    padding: 2rem 0px;
+    display: flex;
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 30px;
+    color: var(--primary-font-color);
+    border-radius: 10px;
+
+}
+.nav i{
+    font-size: 20px;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+   
+    width: 250px;
+    height: 100vh;
+}
+.active{
+    background-color: var(--btn-bg);
+    color: #fff;
+
+}
+.nav:hover{
+    background-color: var(--btn-bg);
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.rightside{
+    width: 78%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height: auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.rightside table{
+    width: 100%;
+    height: auto;
+    margin: 3rem 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+
+}
+td, th{
+    padding: 20px;
+    
+   
+}
+th{
+    background-color: var(--btn-bg);
+    border-left: none;
+}
+tr:hover{
+    background-color: #6e3e3e44;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.btn
+{
+    width: 120px;
+    background-color:var(--btn-bg);
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.rightside .btn{
+    margin-top: 1rem;
+
+}
+.primary-btn:hover{
+    color: var(--primary-font-color);
+    background-color: transparent;
+    outline: 1px solid var(--btn-bg);
+}

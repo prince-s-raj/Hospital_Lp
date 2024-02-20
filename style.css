@@ -1,0 +1,438 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    color: #000;
+}
+:root{
+    --primary-color: #e07a7a;
+    --secondary-color: rgba(131, 129, 131, 0.801);
+    --hover-color: green;
+    --font-color:#000;
+    --primary-font-color: rgb(11, 109, 76);
+    --btn-bg: #6dbd9e;
+  
+}
+.container{
+    padding: 1rem 6rem;
+    width: 100%;
+    height: auto;
+}
+a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* NAVBAR Start */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+   
+}
+.navbar ul li a:hover{
+   text-decoration: underline;
+   text-underline-offset: 6px;
+   text-decoration-thickness: 3px;
+   transition: all .2s ease-out;
+   color: #6dbd9e;
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+.btn
+{
+    width: 100px;
+    background-color:var(--btn-bg);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.outline-btn{
+    background-color: transparent; 
+    color: #fff;
+    border: 1px solid var(--btn-bg);
+}
+.primary-btn:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--btn-bg);
+}
+.outline-btn:hover{
+    color: var(--font-color);
+    background-color: var(--btn-bg);
+}
+
+/* Intro section start here..... */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+    padding: 0 0 0 6rem ;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 6rem;
+
+}
+ .content h1{
+    text-transform: uppercase;
+    color: var(--primary-font-color);
+    line-height: 50px;
+}
+.content h1 span{
+    font-weight: 100;
+    color: #6dbd9e;
+}
+.content h3{
+    color: #6dbd9e;
+}
+.content p{
+    font-size: 17px;
+    line-height: 25px;
+    width: fit-content;
+    padding-bottom: 1rem;
+}
+.content a:hover{
+    color: var(--btn-bg);
+    border: none;
+    outline: 1px solid #6dbd9e;
+}
+.header-right{
+   display: flex;
+   align-items: center;
+    width: 350px;
+    height: 75vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.603) ), url(images/h6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative;
+
+}
+.header-right .img{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    right: 150px;
+}
+.header-bottom{
+    background-color: var(--btn-bg);
+    padding: 20px 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #fff;
+}
+.bottom-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.header-bottom i{
+    color: rgb(11, 109, 76);
+    font-size: 30px;
+}
+.header-bottom p{
+    padding-top: 7px;
+    color: #000000a9;
+}
+
+/* Service */
+.service .primary-content{
+    padding: 2rem;
+    text-align: center;
+}
+.service .primary-content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.service h3{
+    text-align: center; 
+    padding-bottom: 20px;
+}
+.service .secondary-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 2rem 5rem 4rem 5rem;
+}
+.service .secondary-content .round{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid var(--btn-bg);
+    border-radius: 50%;
+}
+.service .secondary-content .round:hover{
+    background-color: var(--btn-bg);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.service .secondary-content .round i{
+    font-size: 60px;
+    color: var(--primary-font-color);
+}
+.service .secondary-content .round h4{
+    text-transform: uppercase;
+    color: #00000075;
+    text-align: center;
+}
+
+
+/* Department Section */
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c9c9c91c;
+    height: auto; 
+    padding: 5rem 5rem 0 5rem;
+}
+.top-content .content{
+    padding: 0;
+    width: 45%;
+    gap: 30px;
+}
+.top-content .content .text{
+    width: 90%;
+    padding-bottom: 20px;
+}
+.dep-img{
+    width: 40%;
+    height:400px;
+}
+.dep-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.departments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    position: relative;
+    top: -80px;
+}
+
+.dep-section{
+    display: flex;
+    gap: 20px;
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+}
+.dep-section .main-icon{
+    font-size: 50px;
+    color: var(--primary-font-color);
+}
+.section-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+.arrow{
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    padding: 10px 20px;
+    background-color: var(--primary-font-color);;
+    border-radius: 10px 0px 10px 0;
+    
+}
+.arrow:hover{
+    background-color: #fff;
+    cursor: pointer;
+    color: var(--btn-bg);
+    transition: all .5s ease;
+}
+/* About Section starting.... */
+
+.about-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.about-left{
+    width: 40%;
+}
+.about-left img{
+    width: 100%;
+}
+.about-right{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.about-right h3,.service h3{
+    font-size: 1.7rem;
+    color: var(--primary-font-color);
+
+}
+.about-right h1{
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 30px;
+
+}
+.about-right p{
+    padding-top: 30px;
+    width: 70%;
+    line-height: 1.5rem;
+
+}
+
+.about-right a{
+    color: var(--btn-bg);
+}
+.about-right i{
+    font-size: 12px;
+}
+.about-right a:hover{
+    color: #0d6342;
+}
+/* DOCTOR Section */
+.secondary-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+.employee{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 300px;
+}
+ .doctor .primary-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 3rem;
+    color: var(--primary-font-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.employee img{
+    width: 100%;
+    height: 350px;
+}
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+
+}
+.name{
+    color: var(--primary-font-color);
+}
+.position{
+    color: var(--secondary-color);
+}
+
+/* FOOTER Starting....... */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: black;
+    padding: 4rem;
+}
+.footer i{
+    color: #fff;
+    padding: 10px;
+    border: 1px solid var(--secondary-color) ;
+    border-radius: 50%;
+}
+.footer i:hover{
+    background-color: var(--btn-bg);
+    transition: all .8s ease;
+    cursor: pointer;
+
+}
+.footer-column,
+.footer-column ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-column h4{
+    text-transform: uppercase;
+    color: #fff;
+}
+.footer-column ul{
+    gap: 15px;
+}
+.footer-column a{
+    color: #fff;
+}
+.footer-column a:hover{
+    color: var(--btn-bg);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Footer END */
